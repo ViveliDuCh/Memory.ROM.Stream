@@ -3,6 +3,7 @@ using System.Buffers;
 using System.Collections.Generic;
 using System.Text;
 using Libraries;
+using Memory.ROMStream.Libraries.Generic;
 
 namespace Memory.ROMStream.Libraries;
 
@@ -31,5 +32,10 @@ public class MemoryROMStreamExtension
     public static Stream StreamFromReadOnlyMemory(ReadOnlyMemory<byte> memory)
     {
         return new ReadOnlyMemoryStream(memory);
+    }
+    public static Stream StreamFromReadOnlyMemory_T<T>(ReadOnlyMemory<T> memory)
+        where T : unmanaged
+    {
+        return new ReadOnlyMemoryStream<T>(memory);
     }
 }

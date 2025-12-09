@@ -12,9 +12,7 @@ public sealed class UnifiedReadOnlyMemoryStream : Stream
     private int _position;
     private bool _disposed;
 
-    /// <summary>
-    /// Initializes a new instance with ReadOnlyMemory&lt;byte&gt;.
-    /// </summary>
+    // Unifies char and byte ReadOnlyMemory into a single ROM Stream
     public UnifiedReadOnlyMemoryStream(ReadOnlyMemory<byte> buffer)
     {
         _byteBuffer = buffer;
@@ -22,9 +20,6 @@ public sealed class UnifiedReadOnlyMemoryStream : Stream
         _ownsEncodedBytes = false;
     }
 
-    /// <summary>
-    /// Initializes a new instance with ReadOnlyMemory&lt;char&gt;, encoding to bytes.
-    /// </summary>
     public UnifiedReadOnlyMemoryStream(ReadOnlyMemory<char> buffer, Encoding? encoding = null)
     {
         encoding ??= Encoding.UTF8;
