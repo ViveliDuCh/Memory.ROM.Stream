@@ -1,1 +1,2 @@
 # Memory.ROM.Stream
+This is an exploration of all the options out there for getting a System.IO.Stream backed by an either Memory<T> or ReadOnlyMemory<T>, like the AsStream() method from the CommunityToolkit, the existing MemoryStream and internal implementations, plus custom streams' implementations with fixed-typing (Only for byte, char or both) and generic type constrain to T being just unmanaged types.
