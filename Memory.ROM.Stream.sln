@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11206.111 d18.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memory.ROM.Stream", "Memory.ROM.Stream.csproj", "{23703C61-B9D1-E133-6B27-9580D355BCBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libraries", "Libraries\Libraries.csproj", "{F2612EB1-61FD-42F8-BA1C-25DF9C66F7DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23703C61-B9D1-E133-6B27-9580D355BCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23703C61-B9D1-E133-6B27-9580D355BCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23703C61-B9D1-E133-6B27-9580D355BCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23703C61-B9D1-E133-6B27-9580D355BCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2612EB1-61FD-42F8-BA1C-25DF9C66F7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2612EB1-61FD-42F8-BA1C-25DF9C66F7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2612EB1-61FD-42F8-BA1C-25DF9C66F7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2612EB1-61FD-42F8-BA1C-25DF9C66F7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {988E8FF9-B4B5-4B68-B7DA-BD0B8B7C1F4F}
+	EndGlobalSection
+EndGlobal
